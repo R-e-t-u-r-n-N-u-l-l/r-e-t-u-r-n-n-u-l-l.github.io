@@ -4,11 +4,17 @@
 body {
   margin: 0;
 }
+
+div {
+  font-size: 100vh;
+}
 nav {
+  position: fixed;
   margin: 0;
   padding: 0;
   color: white;
   background-color: #333;
+  width: 100vw;
   height: var(--headerHeight);
 }
 
@@ -17,17 +23,39 @@ nav > img {
   height: var(--headerHeight);
   width: var(--headerHeight);
   display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: left;
 }
 
 
-#nav {
+#headContainer {
   display: inline-block;
+  list-style-type: none;
+  height: var(--headerHeight);
+  width: calc(99% - var(--headerHeight));
+  padding: 0;
+  margin: 0;
+  margin-left: 1.5vh;
+}
+
+#headContainer > li > h1 {
+  display: inline-block;
+  height: calc(var(--headerHeight) / 2);
+  font-size: calc(var(--headerHeight) / 2.5);
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  letter-spacing: 1vh;
+  word-spacing: 2vh;
+}
+
+#nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  height: calc(var(--headerHeight) * 0.5);
+  height: calc(var(--headerHeight) / 2);
 }
 
 #nav > li {
