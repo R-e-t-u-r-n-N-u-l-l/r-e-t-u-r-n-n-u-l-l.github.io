@@ -9,12 +9,13 @@ nav img {
 
 nav a {
   background-color: #555;
+  color: white;
   border: 1px solid #aaa;
+  color: inherit;
 }
 
 nav a:hover {
   background-color: #777;
-  border: 1px solid #aaa;
 }
 
 nav a:hover {
