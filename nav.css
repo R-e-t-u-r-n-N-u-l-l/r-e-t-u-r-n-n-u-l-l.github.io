@@ -1,24 +1,51 @@
+:root {
+  --headerHeight: 10vh;
+}
+body {
+  margin: 0;
+}
 nav {
+  margin: 0;
+  padding: 0;
   color: white;
   background-color: #333;
+  height: var(--headerHeight);
 }
 
-nav img {
+nav > img {
   border-radius: 50%;
+  height: var(--headerHeight);
+  width: var(--headerHeight);
+  display: inline-block;
 }
 
-nav a {
-  background-color: #555;
+
+#nav {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: calc(var(--headerHeight) * 0.5);
+}
+
+#nav > li {
+  float: left;
+}
+
+#nav > li > a {
+  display: inline-block;
   color: white;
-  border: 1px solid #aaa;
-  color: inherit;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-nav a:hover {
-  background-color: #777;
+#nav > li > a:hover:not(.active) {
+  background-color: #111;
 }
 
-nav a:hover {
-  background-color: #888;
-  border: 1px solid #ddd;
+.active {
+  background-color: #4CAF50;
 }
