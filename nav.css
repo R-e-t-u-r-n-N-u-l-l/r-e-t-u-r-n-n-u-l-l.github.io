@@ -5,9 +5,6 @@ body {
   margin: 0;
 }
 
-div {
-  font-size: 100vh;
-}
 nav {
   position: fixed;
   margin: 0;
@@ -28,15 +25,15 @@ nav > img {
   float: left;
 }
 
-
 #headContainer {
   display: inline-block;
   list-style-type: none;
   height: var(--headerHeight);
-  width: calc(99% - var(--headerHeight));
   padding: 0;
   margin: 0;
   margin-left: 1.5vh;
+  width: calc(100vw - var(--headerHeight) - 2vh);
+  float: right;
 }
 
 #headContainer > li > h1 {
@@ -56,21 +53,29 @@ nav > img {
   padding: 0;
   overflow: hidden;
   height: calc(var(--headerHeight) / 2);
+  width: 100%;
 }
 
 #nav > li {
   float: left;
+  height: calc(var(--headerHeight) / 2);
+  width: calc(var(--headerHeight));
+  width: calc(100% / 4);
 }
 
 #nav > li > a {
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  position: relative;
+  font-size: calc((1.5vw + 2vh) / 2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#nav > li > a:hover:not(.active) {
+#nav > li:hover:not(.active) {
   background-color: #111;
 }
 
