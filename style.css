@@ -10,6 +10,9 @@
   --color2: #333;
   --color3: #222;
   --color4: #111;
+  --color5: #4CAF50;
+
+  --textColor: white;
 }
 
 body {
@@ -32,4 +35,21 @@ body {
   word-break: keep-all;
   border-radius: 5vh;
   margin-bottom: calc(var(--headerHeight) + var(--main_containerOffset) + var(--footerHeight));
+  color: var(--textColor);
+}
+
+  #main_container {
+  display: inline-block;
+}
+
+  #main_container p {
+  padding: 0 calc(1vh + 1vw) 0 calc(1vh + 1vw);
+}
+
+  #main_container h1 {
+  text-align: center;
+}
+
+  #main_container a {
+  color: var(--color5);
 }
