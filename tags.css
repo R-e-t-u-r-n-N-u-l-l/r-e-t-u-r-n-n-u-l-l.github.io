@@ -96,7 +96,24 @@
 
 .content {
   display: block;
-  margin: calc((0.5vh + 0.5vh) / 2);
+  margin: calc((1.5vh + 1.5vh) / 2);
+  padding: calc((1.5vh + 1.5vh) / 2);
+  border-radius: calc((1.5vh + 1.5vh) / 2);
   background-color: var(--color3);
+  overflow: hidden;
   border: calc((0.5vh + 0.5vh) / 2) solid var(--color2);
+}
+
+.content > p {
+  display: block;
+  float: left;
+  max-width: calc(100% - 18vw - (1.5vh + 1.5vh));
+  margin: 0;
+}
+
+.content > img {
+  display: block;
+  float: right;
+  width: 16vw;
+  height: 9vw;
 }

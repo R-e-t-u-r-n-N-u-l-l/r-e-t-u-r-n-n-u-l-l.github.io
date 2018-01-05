@@ -3,6 +3,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=LUcn8cZdeQA",
+      "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg",
       "date"    : "23/12/2017",
       "title"   : "Programming Fractal Shapes: Java",
       "desc"    : "We create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
@@ -10,6 +11,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=kyiWTgs3jMI",
+      "img"     : "https://i.ytimg.com/vi/kyiWTgs3jMI/hqdefault.jpg",
       "date"    : "15/10/2017",
       "title"   : "Prime Number generators : C++ & Java",
       "desc"    : "We create two different prime number generators with Java and C++",
@@ -17,6 +19,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=4KOAiRmOBUo",
+      "img"     : "https://i.ytimg.com/vi/4KOAiRmOBUo/hqdefault.jpg",
       "date"    : "2/10/2017",
       "title"   : "2D Survival-type Game in Java - #2 - Animals and crafting",
       "desc"    : "We create the second part of a 2D survival game with Java",
@@ -24,6 +27,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=xxiaZlPnIh0",
+      "img"     : "https://i.ytimg.com/vi/xxiaZlPnIh0/hqdefault.jpg",
       "date"    : "09/09/2017",
       "title"   : "2D Survival-type Game in Java - #1 - The beginning",
       "desc"    : "We create the beginnings of a 2D survival game with Java",
@@ -31,6 +35,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=0PM10vOtd6o",
+      "img"     : "https://i.ytimg.com/vi/0PM10vOtd6o/hqdefault.jpg",
       "date"    : "30/06/2017",
       "title"   : "Java Algorithms - Brute Force",
       "desc"    : "We create a brute force algorithm that checks every possible input string that concists of ASCII characters with Java",
@@ -38,6 +43,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=Dc04ZZCp108",
+      "img"     : "https://i.ytimg.com/vi/Dc04ZZCp108/hqdefault.jpg",
       "date"    : "02/06/2017",
       "title"   : "Simple Java Games #1: Snake",
       "desc"    : "We create the well know video-game Snake with Java",
@@ -45,6 +51,7 @@ activityFeed = {
     {
       "tags"    : ["video"],
       "url"     : "https://www.youtube.com/watch?v=KU6qdvcdNxo",
+      "img"     : "https://i.ytimg.com/vi/KU6qdvcdNxo/hqdefault.jpg",
       "date"    : "12/05/2017",
       "title"   : "Google Dinosaur: The Perfect Algorithm",
       "desc"    : "We create our first video about a perfect algorithm for the Google dinosaur game with JavaScript",

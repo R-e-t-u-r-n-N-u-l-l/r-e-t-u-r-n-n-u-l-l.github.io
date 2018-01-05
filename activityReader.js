@@ -12,7 +12,7 @@ function displayContent(activity) {
   var container = document.getElementById("content_container");
   container.innerHTML = "";
   for(var a of activity)
-    container.innerHTML += "<div onclick='window.location=" + a.url + "' class=content>" + a.title + "<br />" + a.desc + "<br />" + a.date + "</div>";
+    container.innerHTML += "<div onclick=\"window.location=\'" + a.url + "\'\" class=content><p>" + a.title + "<br /><br />" + a.desc + "<br /> Date: " + a.date + "</p><img alt='Image not available' src=" + a.img + "></div>";
 }
 
 function search(status) {
