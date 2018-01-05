@@ -34,7 +34,7 @@ body {
   background-color: var(--color1);
   word-break: keep-all;
   border-radius: 5vh;
-  margin-bottom: calc(var(--headerHeight) + var(--main_containerOffset) + var(--footerHeight));
+  margin-bottom: var(--footerHeight);
   color: var(--textColor);
 }
 
