@@ -1,4 +1,32 @@
+:root {
+  --amountOfTabs: 4;
+  --headerHeight: 10vh;
+  --main_containerOffset: 10vh;
+  --main_containerWidth: 80vw;
+  --footerHeight: 10vh;
+
+/* COLOR VALUES */
+  --color1: #292929;
+  --color2: #333;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #111;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#main_container {
+  position: relative;
+  top: calc(var(--headerHeight) + var(--main_containerOffset));
+  left: 50%;
+  width: var(--main_containerWidth);
+  min-height: calc(100vh - var(--headerHeight));
+  transform: translate(-50%, 0);
+  background-color: var(--color1);
+  font-size: 100vw;
+  word-break: keep-all;
+  border-radius: 5vh;
+  margin-bottom: calc(var(--headerHeight) + var(--main_containerOffset) + var(--footerHeight));
 }
