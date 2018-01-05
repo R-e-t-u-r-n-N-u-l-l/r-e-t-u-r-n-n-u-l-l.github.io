@@ -8,7 +8,11 @@ activityFeed = {
       "content" : "text",
     },
     {
-
+      "tags"    : ["not-video"],
+      "url"     : "www.test.com",
+      "date"    : "20/20/20",
+      "title"   : "Video 1",
+      "content" : "text",
     },
   ]
 }
