@@ -16,15 +16,19 @@ function displayContent(activity) {
 }
 
 function search(status) {
-  var string = document.getElementById("searchbar").value;
+  var string = document.getElementById("searchbar").value.toLowerCase();
 
-  var activity = getActivity([status]);
+  if(status == "video")
+    activity = getActivity(["video"]);
+  else
+    activity = getActivity();
+
   displayContent(searchActivity(activity, string.split(" ")));
 }
 
 function getActivity(tags) {
   var activity = JSON.parse(JSON.stringify(activityFeed)).content;
-
+  console.log(tags)
   if(tags != undefined && tags.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
       var a = activity[i];
@@ -42,8 +46,8 @@ function searchActivity(activity, keywords) {
   if(keywords != undefined && keywords.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
       var a = activity[i];
-      var title = a.title.split(" ");
-      var desc  = a.desc.split(" ");
+      var title = a.title.toLowerCase().split(" ");
+      var desc  = a.desc.toLowerCase().split(" ");
       for(var k of keywords) {
         if(k == "")
           continue;
