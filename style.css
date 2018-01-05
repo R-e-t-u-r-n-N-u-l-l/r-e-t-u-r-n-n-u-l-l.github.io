@@ -27,6 +27,7 @@ body {
 #main_container {
   position: relative;
   display: inline-block;
+  overflow: hidden;
   top: calc(var(--headerHeight) + var(--main_containerOffset));
   left: 50%;
   width: var(--main_containerWidth);

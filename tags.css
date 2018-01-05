@@ -94,10 +94,9 @@
   outline: none;
 }
 
-#content_container {
-  background-color: red;
-}
-
 .content {
-
+  display: block;
+  margin: calc((0.5vh + 0.5vh) / 2);
+  background-color: var(--color3);
+  border: calc((0.5vh + 0.5vh) / 2) solid var(--color2);
 }

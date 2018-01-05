@@ -12,7 +12,7 @@ function displayContent(activity) {
   var container = document.getElementById("content_container");
   container.innerHTML = "";
   for(var a of activity)
-    container.innerHTML += "<div class=content>" + a.title + a.desc + a.date + a.url + "</div>";
+    container.innerHTML += "<div class=content>" + a.title + "<br />" + a.desc + "<br /><a href=" + a.url + ">Link</a>" + "<br />" + a.date + "</div>";
 }
 
 function search(status) {
@@ -23,7 +23,7 @@ function search(status) {
 }
 
 function getActivity(tags) {
-  var activity = JSON.parse(JSON.stringify(activityFeed)).content.reverse();
+  var activity = JSON.parse(JSON.stringify(activityFeed)).content;
 
   if(tags != undefined && tags.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
