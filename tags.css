@@ -1,0 +1,73 @@
+:root {
+  --tag_containerHeight: 10vh;
+}
+
+#tag_container {
+  width: calc(100% - 2vh);
+  height: var(--tag_containerHeight);
+  background-color: var(--color2);
+  border-top: 0.5vh solid var(--color3);
+  border-bottom: 0.5vh solid var(--color3);
+  padding: 1vh;
+}
+
+.custom_checkbox {
+ display: inline-block;
+ position: relative;
+ cursor: pointer;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ height: 4vh;
+ border-radius: 5vw;
+ padding-left: 0.5vw;
+ padding-right: 0.5vw;
+ background-color: #ddd;
+ margin-left: 0.5vw;
+ margin-right: 0.5vw;
+ transition: background-color 0.5s;
+}
+
+.custom_checkbox:first-of-type {
+  margin-left: 0;
+}
+.custom_checkbox:last-of-type {
+  margin-right: 0;
+}
+
+.custom_checkbox > input {
+ position: absolute;
+ opacity: 0;
+}
+
+.checkmark {
+ position: relative;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-size: 1vw;
+ text-align: left;
+ padding-left: 0.75vw;
+ padding-right: 0.75vw;
+ float: left;
+ width: 100%;
+}
+
+.custom_checkbox:hover > input,.custom_checkbox {
+ background-color: #bbb;
+}
+
+.custom_checkbox[active *= true] {
+  background-color: var(--color5);
+}
+
+.checkmark > .cross {
+ transform: rotate(0deg);
+ transition: transform 0.25s;
+ float: right;
+}
+
+.custom_checkbox > input:checked ~ .checkmark > .cross {
+  transform: rotate(45deg);
+}

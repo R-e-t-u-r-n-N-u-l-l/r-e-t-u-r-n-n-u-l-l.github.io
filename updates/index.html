@@ -2,12 +2,14 @@
 <html>
   <head>
     <title>Updates</title>
+    <meta charset="utf-8">
     <link rel="icon" href="../images/returnnull.ico">
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="../nav.css">
+    <link rel="stylesheet" type="text/css" href="../tags.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <script src=activity.json></script>
-    <script src=activityReader.js></script>
+    <script src=../activityFeed.json></script>
+    <script src=../activityReader.js></script>
   </head>
   <body>
     <nav>
@@ -20,7 +22,17 @@
       </ul>
     </nav>
     <div id=main_container>
-
+      <h1>Updates</h1>
+      <div id=tag_container>
+        <label class=custom_checkbox active=true>
+          <input type="checkbox" checked="checked" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+          <span class=checkmark>blaaaaaaaaaaaaaaad<span class=cross>+</span></span>
+        </label>
+        <label class=custom_checkbox active=true>
+          <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+          <span class=checkmark>tag<span class=cross>+</span></span>
+        </label>
+      </div>
     </div>
     <footer></footer>
   </body>

@@ -5,6 +5,7 @@ activityFeed = {
       "url"     : "www.test.com",
       "date"    : "20/20/20",
       "title"   : "Video 1",
+      "desc"    : "This is a video",
       "content" : "text",
     },
     {
@@ -12,6 +13,7 @@ activityFeed = {
       "url"     : "www.test.com",
       "date"    : "20/20/20",
       "title"   : "Video 1",
+      "desc"    : "This is not a video",
       "content" : "text",
     },
   ]
