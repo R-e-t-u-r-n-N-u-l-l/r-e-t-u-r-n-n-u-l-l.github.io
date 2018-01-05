@@ -22,8 +22,18 @@
     </nav>
     <div id=main_container>
       <h1>Videos</h1>
-      <div id=searchcontainer>
-        <input id=searchbar onchange="" type="text" placeholder="search...">
+      <div id=search_container>
+        <input id=searchbar onkeyup="search()" type="text" placeholder="search...">
+    </div>
+    <div id=tag_container>
+      <label class=custom_checkbox active=true>
+        <input type="checkbox" checked="checked" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+        <span class=checkmark>blaaaaaaaaaaaaaaad<span class=cross>+</span></span>
+      </label>
+      <label class=custom_checkbox active=true>
+        <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+        <span class=checkmark>tag<span class=cross>+</span></span>
+      </label>
     </div>
     </div>
     <footer></footer>

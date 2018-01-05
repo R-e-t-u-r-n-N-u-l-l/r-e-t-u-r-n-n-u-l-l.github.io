@@ -6,7 +6,6 @@ activityFeed = {
       "date"    : "20/20/20",
       "title"   : "Video 1",
       "desc"    : "This is a video",
-      "content" : "text",
     },
     {
       "tags"    : ["not-video"],
@@ -14,7 +13,6 @@ activityFeed = {
       "date"    : "20/20/20",
       "title"   : "Video 1",
       "desc"    : "This is not a video",
-      "content" : "text",
     },
   ]
 }

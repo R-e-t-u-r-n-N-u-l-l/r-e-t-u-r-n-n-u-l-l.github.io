@@ -86,7 +86,7 @@
   border: calc((0.2vw + 0.4vh) / 2) solid var(--color3);
 }
 
-#searchcontainer {
+#search_container {
   position: relative;
   display: inline-block;
   left: 50vw;
