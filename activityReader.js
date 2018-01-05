@@ -1,11 +1,26 @@
 function loadContent(status) {
-  var activity;
-  if(status == "video")
-    activity = getActivity(["video"]);
-  else
-    activity = getActivity();
+  getActivityByTags();
+  displayContent(getActivity([status]));
+}
 
-  displayContent(activity);
+function getActivityByTags() {
+  var tagValues = [];
+  var results   = [];
+  var tagNodes  = document.querySelectorAll('.custom_checkbox[active=true] > .checkmark');
+  for(var tag of tagNodes)
+    tagValues.push(tag.innerHTML.split(tag.innerHTML.slice(tag.innerHTML.indexOf('<span')))[0]);
+
+  var activity = JSON.parse(JSON.stringify(activityFeed)).content;
+
+  for(var i = activity.length - 1; i >= 0; i--) {
+    var a = activity[i];
+    for(var tag of tagValues) {
+      if(a.tags.indexOf(tag) != -1)
+        results.push(a);
+    }
+  }
+  console.log(results);
+  displayContent(results)
 }
 
 function displayContent(activity) {
@@ -18,18 +33,15 @@ function displayContent(activity) {
 function search(status) {
   var string = document.getElementById("searchbar").value.toLowerCase();
 
-  if(status == "video")
-    activity = getActivity(["video"]);
-  else
-    activity = getActivity();
+  activity = getActivity([status]);
 
   displayContent(searchActivity(activity, string.split(" ")));
 }
 
 function getActivity(tags) {
   var activity = JSON.parse(JSON.stringify(activityFeed)).content;
-  console.log(tags)
-  if(tags != undefined && tags.length > 0) {
+
+  if(tags != undefined && tags[0] != undefined && tags.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
       var a = activity[i];
       for(var t of tags) {
