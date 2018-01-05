@@ -72,9 +72,6 @@
   transform: rotate(45deg);
 }
 
-
-
-
 #searchbar {
   padding: calc((0.5vw + 0.8vh) / 2);
   font-size: calc((1.2vw + 1.5vh) / 2);
@@ -95,4 +92,12 @@
 
 #searchbar:focus {
   outline: none;
+}
+
+#content_container {
+  background-color: red;
+}
+
+.content {
+
 }
