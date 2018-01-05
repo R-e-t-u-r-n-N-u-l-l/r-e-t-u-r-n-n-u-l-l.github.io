@@ -18,7 +18,8 @@ function displayContent(activity) {
 function search(status) {
   var string = document.getElementById("searchbar").value;
 
-  displayContent(searchActivity(getActivity(status), string.split(" ")));
+  var activity = getActivity([status]);
+  displayContent(searchActivity(activity, string.split(" ")));
 }
 
 function getActivity(tags) {
