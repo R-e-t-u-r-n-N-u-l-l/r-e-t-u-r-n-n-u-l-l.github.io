@@ -26,6 +26,7 @@ body {
 
 #main_container {
   position: relative;
+  display: inline-block;
   top: calc(var(--headerHeight) + var(--main_containerOffset));
   left: 50%;
   width: var(--main_containerWidth);
@@ -38,18 +39,19 @@ body {
   color: var(--textColor);
 }
 
-  #main_container {
-  display: inline-block;
-}
-
-  #main_container p {
+#main_container p {
   padding: 0 calc(1vh + 1vw) 0 calc(1vh + 1vw);
 }
 
-  #main_container h1 {
-  text-align: center;
+#main_container h1 {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  margin: 1vh;
+  transform: translate(-50%, 0);
+  font-size: 4vw;
 }
 
-  #main_container a {
+#main_container a {
   color: var(--color5);
 }
