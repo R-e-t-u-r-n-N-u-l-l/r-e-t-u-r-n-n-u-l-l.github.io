@@ -19,7 +19,7 @@
  -moz-user-select: none;
  -ms-user-select: none;
  user-select: none;
- height: 4vh;
+ height: calc((2vw + 3vh) / 2);
  border-radius: 5vw;
  padding-left: 0.5vw;
  padding-right: 0.5vw;
@@ -70,4 +70,29 @@
 
 .custom_checkbox > input:checked ~ .checkmark > .cross {
   transform: rotate(45deg);
+}
+
+
+
+
+#searchbar {
+  padding: calc((0.5vw + 0.8vh) / 2);
+  font-size: calc((1.2vw + 1.5vh) / 2);
+  width: 15vw;
+  height: 2vh;
+  color: var(--textColor);
+  background-color: var(--color2);
+  border-radius: 1vh;
+  border: calc((0.2vw + 0.4vh) / 2) solid var(--color3);
+}
+
+#searchcontainer {
+  position: relative;
+  display: inline-block;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+#searchbar:focus {
+  outline: none;
 }

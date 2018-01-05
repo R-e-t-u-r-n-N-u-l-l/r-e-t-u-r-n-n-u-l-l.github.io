@@ -55,25 +55,3 @@ body {
 #main_container a {
   color: var(--color5);
 }
-
-#searchbar {
-  padding: calc((0.5vw + 0.8vh) / 2);
-  font-size: calc((1.2vw + 1.5vh) / 2);
-  width: 15vw;
-  height: 2vh;
-  color: var(--textColor);
-  background-color: var(--color2);
-  border-radius: 1vh;
-  border: calc((0.2vw + 0.4vh) / 2) solid var(--color3);
-}
-
-#searchcontainer {
-  position: relative;
-  display: inline-block;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-}
-
-#searchbar:focus {
-  outline: none;
-}
