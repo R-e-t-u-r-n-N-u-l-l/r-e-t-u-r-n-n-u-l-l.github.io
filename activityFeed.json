@@ -1,0 +1,14 @@
+activityFeed = {
+  "content": [
+    {
+      "tags"    : ["video"],
+      "url"     : "www.test.com",
+      "date"    : "20/20/20",
+      "title"   : "Video 1",
+      "content" : "text",
+    },
+    {
+
+    },
+  ]
+}
