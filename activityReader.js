@@ -13,14 +13,14 @@ function getActivityByTags() {
     results = getActivity(["video"]);
     tagValues.splice(0, 1);
   } else
-    results = JSON.parse(JSON.stringify(activityFeed)).content;
+    results = getActivity();
 
   for(var i = results.length - 1; i >= 0; i--) {
     var a = results[i];
     for(var tag of tagValues) {
       if(a.tags.indexOf(tag) != -1)
         continue;
-        results.splice(i, 1);
+      results.splice(i, 1);
     }
   }
 
