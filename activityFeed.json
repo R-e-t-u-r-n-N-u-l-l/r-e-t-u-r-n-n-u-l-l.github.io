@@ -1,7 +1,7 @@
 activityFeed = {
   "content": [
     {
-      "tags"    : ["webgl"],
+      "tags"    : ["webgl", "javascript"],
       "url"     : "https://r-e-t-u-r-n-n-u-l-l.github.io/",
       "img"     : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/1200px-WebGL_Logo.svg.png",
       "date"    : "23/12/2017",

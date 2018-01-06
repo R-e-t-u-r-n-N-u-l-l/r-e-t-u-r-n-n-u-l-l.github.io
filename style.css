@@ -24,13 +24,23 @@ body {
   overflow-x: hidden;
 }
 
+#webgl_demo {
+    position: relative;
+    width: 70%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 0.5vh solid var(--color3);
+}
 #canvas_container {
-  position: relative;
-  width: 70%;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  border: 0.5vh solid var(--color3);
+  width: 100%;
+  border-bottom: 0.25vh solid var(--color3);
+}
+#webgl_desc {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5vh;
 }
 
 #main_container {
