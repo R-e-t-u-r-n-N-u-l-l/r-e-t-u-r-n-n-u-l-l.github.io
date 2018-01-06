@@ -1,17 +1,17 @@
 activityFeed = {
   "content": [
     {
-      "tags"    : ["update"],
-      "url"     : "https://www.youtube.com/watch?v=LUcn8cZdeQA",
-      "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg",
+      "tags"    : ["webgl"],
+      "url"     : "https://r-e-t-u-r-n-n-u-l-l.github.io/",
+      "img"     : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/1200px-WebGL_Logo.svg.png",
       "date"    : "23/12/2017",
-      "title"   : "Programming Fractal Shapes: Java",
-      "desc"    : "We create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
+      "title"   : "Creating a WebGl engine from scratch",
+      "desc"    : "WebGL!",
     },
     {
       "tags"    : ["video", "java"],
       "url"     : "https://www.youtube.com/watch?v=LUcn8cZdeQA",
-      "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDTD5RbHsNgboYGYq-PXfgyCuRQVA",
       "date"    : "23/12/2017",
       "title"   : "Programming Fractal Shapes: Java",
       "desc"    : "We create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
@@ -27,7 +27,7 @@ activityFeed = {
     {
       "tags"    : ["video", "java"],
       "url"     : "https://www.youtube.com/watch?v=4KOAiRmOBUo",
-      "img"     : "https://i.ytimg.com/vi/4KOAiRmOBUo/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/4KOAiRmOBUo/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtjM3QZ2JWk_Uf-OXAu7CTkENoPA",
       "date"    : "2/10/2017",
       "title"   : "2D Survival-type Game in Java - #2 - Animals and crafting",
       "desc"    : "We create the second part of a 2D survival game with Java",
@@ -35,7 +35,7 @@ activityFeed = {
     {
       "tags"    : ["video", "java"],
       "url"     : "https://www.youtube.com/watch?v=xxiaZlPnIh0",
-      "img"     : "https://i.ytimg.com/vi/xxiaZlPnIh0/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/xxiaZlPnIh0/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAZ8bznZedHWuWnR6lcC42iNlLoVg",
       "date"    : "09/09/2017",
       "title"   : "2D Survival-type Game in Java - #1 - The beginning",
       "desc"    : "We create the beginnings of a 2D survival game with Java",
@@ -43,7 +43,7 @@ activityFeed = {
     {
       "tags"    : ["video", "java"],
       "url"     : "https://www.youtube.com/watch?v=0PM10vOtd6o",
-      "img"     : "https://i.ytimg.com/vi/0PM10vOtd6o/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/0PM10vOtd6o/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB3Ik6N3JaE416x2ZMNV_r8HUGZfg",
       "date"    : "30/06/2017",
       "title"   : "Java Algorithms - Brute Force",
       "desc"    : "We create a brute force algorithm that checks every possible input string that concists of ASCII characters with Java",
@@ -51,7 +51,7 @@ activityFeed = {
     {
       "tags"    : ["video", "java"],
       "url"     : "https://www.youtube.com/watch?v=Dc04ZZCp108",
-      "img"     : "https://i.ytimg.com/vi/Dc04ZZCp108/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/Dc04ZZCp108/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAmZQFfLgtp7mOO0Flj_wetrK7b-g",
       "date"    : "02/06/2017",
       "title"   : "Simple Java Games #1: Snake",
       "desc"    : "We create the well know video-game Snake with Java",
@@ -59,7 +59,7 @@ activityFeed = {
     {
       "tags"    : ["video", "javascript"],
       "url"     : "https://www.youtube.com/watch?v=KU6qdvcdNxo",
-      "img"     : "https://i.ytimg.com/vi/KU6qdvcdNxo/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/KU6qdvcdNxo/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB42O1JoB3czCMoRdGR-skL_57uHg",
       "date"    : "12/05/2017",
       "title"   : "Google Dinosaur: The Perfect Algorithm",
       "desc"    : "We create our first video about a perfect algorithm for the Google dinosaur game with JavaScript",
