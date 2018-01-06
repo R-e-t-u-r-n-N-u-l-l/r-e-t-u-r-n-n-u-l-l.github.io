@@ -23,7 +23,7 @@ function draw() {
   Lighting.AmbientLight('#000');
 	Lighting.PointLight('#2f2', '#dfd', new Vector3D(0, 0, 10))
 	custom.rotate(0, offset / 1.5, 0);
-	custom.scale(2, 2.5, 2);
+	custom.scale(2, 2 / ratio, 2);
 	custom.location.y = Math.sin(offset / 3);
 	custom.render();
 	offset += 0.03;
