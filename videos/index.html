@@ -11,7 +11,7 @@
     <script src=../activityFeed.json></script>
     <script src=../activityReader.js></script>
   </head>
-  <body onload="loadContent('video')">
+  <body onload="loadContent()">
     <nav>
       <a href="https://r-e-t-u-r-n-n-u-l-l.github.io"><img alt="r-n" src="https://yt3.ggpht.com/-MkimIbd4DxQ/AAAAAAAAAAI/AAAAAAAAAAA/3i9JXS4rrT0/s288-c-k-no-mo-rj-c0xffffff/photo.jpg"></a>
       <ul id=nav>
@@ -24,16 +24,24 @@
     <div id=main_container>
       <h1>Videos</h1>
       <div id=search_container>
-        <input id=searchbar onkeyup="search('video')" type="text" placeholder="search...">
+        <input id=searchbar onkeyup="search()" type="text" placeholder="search...">
       </div>
       <div id=tag_container>
-        <label class=custom_checkbox active=true>
-          <input type="checkbox" checked="checked" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
-          <span class=checkmark>blaaaaaaaaaaaaaaad<span class=cross>+</span></span>
+        <label class=custom_checkbox active=true style="display: none;">
+          <input type="checkbox" checked="checked">
+          <span class=checkmark>video<span class=cross>+</span></span>
         </label>
-        <label class=custom_checkbox active=true>
+        <label class=custom_checkbox active=true onchange=search()>
           <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
-          <span class=checkmark>tag<span class=cross>+</span></span>
+          <span class=checkmark>java<span class=cross>+</span></span>
+        </label>
+        <label class=custom_checkbox active=true onchange=search()>
+          <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+          <span class=checkmark>c++<span class=cross>+</span></span>
+        </label>
+        <label class=custom_checkbox active=true onchange=search()>
+          <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+          <span class=checkmark>javascript<span class=cross>+</span></span>
         </label>
       </div>
       <div id=content_container>

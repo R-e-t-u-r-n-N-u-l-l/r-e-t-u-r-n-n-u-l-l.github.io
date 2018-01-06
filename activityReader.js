@@ -1,6 +1,5 @@
-function loadContent(status) {
-  getActivityByTags();
-  displayContent(getActivity([status]));
+function loadContent() {
+  displayContent(getActivityByTags());
 }
 
 function getActivityByTags() {
@@ -10,7 +9,7 @@ function getActivityByTags() {
   for(var tag of tagNodes)
     tagValues.push(tag.innerHTML.split(tag.innerHTML.slice(tag.innerHTML.indexOf('<span')))[0]);
 
-  var activity = JSON.parse(JSON.stringify(activityFeed)).content;
+  var activity = JSON.parse(JSON.stringify(activityFeed)).content.reverse();
 
   for(var i = activity.length - 1; i >= 0; i--) {
     var a = activity[i];
@@ -19,8 +18,8 @@ function getActivityByTags() {
         results.push(a);
     }
   }
-  console.log(results);
-  displayContent(results)
+
+  return results;
 }
 
 function displayContent(activity) {
@@ -30,31 +29,15 @@ function displayContent(activity) {
     container.innerHTML += "<div onclick=\"window.location=\'" + a.url + "\'\" class=content><p>" + a.title + "<br /><br />" + a.desc + "<br /> Date: " + a.date + "</p><img alt='Image not available' src=" + a.img + "></div>";
 }
 
-function search(status) {
-  var string = document.getElementById("searchbar").value.toLowerCase();
-
-  activity = getActivity([status]);
-
-  displayContent(searchActivity(activity, string.split(" ")));
+function search() {
+  displayContent(getSearchActivity());
 }
 
-function getActivity(tags) {
-  var activity = JSON.parse(JSON.stringify(activityFeed)).content;
+function getSearchActivity() {
+  var activity = getActivityByTags();
+  var keywords = document.getElementById("searchbar").value.toLowerCase().split(" ");
 
-  if(tags != undefined && tags[0] != undefined && tags.length > 0) {
-    for(var i = activity.length - 1; i >= 0; i--) {
-      var a = activity[i];
-      for(var t of tags) {
-        if(a.tags.indexOf(t) == -1)
-          activity.splice(i, 1);
-      }
-    }
-  }
-
-  return activity;
-}
-
-function searchActivity(activity, keywords) {
+  console.log(keywords);
   if(keywords != undefined && keywords.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
       var a = activity[i];
@@ -84,3 +67,19 @@ function contains(part, array) {
 
   return false;
 }
+
+// function getActivity(tags) {
+//   var activity = JSON.parse(JSON.stringify(activityFeed)).content;
+//
+//   if(tags != undefined && tags[0] != undefined && tags.length > 0) {
+//     for(var i = activity.length - 1; i >= 0; i--) {
+//       var a = activity[i];
+//       for(var t of tags) {
+//         if(a.tags.indexOf(t) == -1)
+//           activity.splice(i, 1);
+//       }
+//     }
+//   }
+//
+//   return activity;
+// }

@@ -27,15 +27,15 @@
         <input id=searchbar onkeyup="search()" type="text" placeholder="search...">
       </div>
       <div id=tag_container>
-        <label class=custom_checkbox active=true onchange=getActivityByTags()>
-          <input type="checkbox" checked="checked" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
+        <label class=custom_checkbox active=true onchange=search()>
+          <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
           <span class=checkmark>java<span class=cross>+</span></span>
         </label>
-        <label class=custom_checkbox active=true onchange=getActivityByTags()>
+        <label class=custom_checkbox active=true onchange=search()>
           <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
           <span class=checkmark>c++<span class=cross>+</span></span>
         </label>
-        <label class=custom_checkbox active=true onchange=getActivityByTags()>
+        <label class=custom_checkbox active=true onchange=search()>
           <input type="checkbox" checked="checked" onclick="var active = this.parentNode.attributes.active; active.value == 'true' ? active.value = 'false' : active.value = 'true'">
           <span class=checkmark>javascript<span class=cross>+</span></span>
         </label>

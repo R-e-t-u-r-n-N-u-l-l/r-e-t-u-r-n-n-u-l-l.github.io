@@ -1,7 +1,7 @@
 activityFeed = {
   "content": [
     {
-      "tags"    : [""],
+      "tags"    : ["update"],
       "url"     : "https://www.youtube.com/watch?v=LUcn8cZdeQA",
       "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg",
       "date"    : "23/12/2017",
