@@ -1,6 +1,5 @@
-function loadContent(status) {
-  getActivityByTags();
-  displayContent(getActivity([status]));
+function loadContent() {
+  displayContent(getActivityByTags());
 }
 
 function getActivityByTags() {
@@ -8,53 +7,45 @@ function getActivityByTags() {
   var results   = [];
   var tagNodes  = document.querySelectorAll('.custom_checkbox[active=true] > .checkmark');
   for(var tag of tagNodes)
-    tagValues.push(tag.innerHTML.split(tag.innerHTML.slice(tag.innerHTML.indexOf('<span')))[0]);
+    tagValues.push(tag.innerHTML.split(tag.innerHTML.slice(tag.innerHTML.indexOf('<span')))[0].toLowerCase());
 
-  var activity = JSON.parse(JSON.stringify(activityFeed)).content;
+  if(tagValues[0] == "video") {
+    var activity = getActivity(["video"]);
+    tagValues.splice(0, 1);
+    console.log(activity);
+  } else
+    var activity = JSON.parse(JSON.stringify(activityFeed)).content.reverse();
+
+  if(tagValues == undefined || tagValues.length === 0)
+    results = activity.reverse();
 
   for(var i = activity.length - 1; i >= 0; i--) {
     var a = activity[i];
     for(var tag of tagValues) {
-      if(a.tags.indexOf(tag) != -1)
+      if(a.tags.indexOf(tag) != -1 && results.indexOf(a) == -1)
         results.push(a);
     }
   }
-  console.log(results);
-  displayContent(results)
+
+  return results;
 }
 
 function displayContent(activity) {
   var container = document.getElementById("content_container");
   container.innerHTML = "";
   for(var a of activity)
-    container.innerHTML += "<div onclick=\"window.location=\'" + a.url + "\'\" class=content><p>" + a.title + "<br /><br />" + a.desc + "<br /> Date: " + a.date + "</p><img alt='Image not available' src=" + a.img + "></div>";
+    container.innerHTML += "<div class=content><p><a href=javascript:void(0) onclick=\"window.open('" + a.url + "', '_blank')\">" + a.title + "</a><br /><br />" + a.desc + "<br /> Date: " + a.date + "</p><a href=javascript:void(0) onclick=\"window.open('" + a.url + "', '_blank')\"><img alt='Image not available' src=" + a.img + "></a></div>";
 }
 
-function search(status) {
-  var string = document.getElementById("searchbar").value.toLowerCase();
-
-  activity = getActivity([status]);
-
-  displayContent(searchActivity(activity, string.split(" ")));
+function search() {
+  displayContent(getSearchActivity());
 }
 
-function getActivity(tags) {
-  var activity = JSON.parse(JSON.stringify(activityFeed)).content;
+function getSearchActivity() {
+  var activity = getActivityByTags();
+  var keywords = document.getElementById("searchbar").value.toLowerCase().split(" ");
 
-  if(tags != undefined && tags[0] != undefined && tags.length > 0) {
-    for(var i = activity.length - 1; i >= 0; i--) {
-      var a = activity[i];
-      for(var t of tags) {
-        if(a.tags.indexOf(t) == -1)
-          activity.splice(i, 1);
-      }
-    }
-  }
-
-  return activity;
-}
-
-function searchActivity(activity, keywords) {
+  console.log(keywords);
   if(keywords != undefined && keywords.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
       var a = activity[i];
@@ -83,4 +74,20 @@ function contains(part, array) {
   }
 
   return false;
+}
+
+function getActivity(tags) {
+  var activity = JSON.parse(JSON.stringify(activityFeed)).content.reverse();
+
+  if(tags != undefined && tags[0] != undefined && tags.length > 0) {
+    for(var i = activity.length - 1; i >= 0; i--) {
+      var a = activity[i];
+      for(var t of tags) {
+        if(a.tags.indexOf(t) == -1)
+          activity.splice(i, 1);
+      }
+    }
+  }
+
+  return activity;
 }

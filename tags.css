@@ -111,7 +111,7 @@
   margin: 0;
 }
 
-.content > img {
+.content > a > img {
   display: block;
   float: right;
   width: 16vw;
