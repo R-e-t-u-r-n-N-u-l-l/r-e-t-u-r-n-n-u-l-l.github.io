@@ -19,7 +19,7 @@ activityFeed = {
     {
       "tags"    : ["video", "java", "c++"],
       "url"     : "https://www.youtube.com/watch?v=kyiWTgs3jMI",
-      "img"     : "https://i.ytimg.com/vi/kyiWTgs3jMI/hqdefault.jpg",
+      "img"     : "https://i.ytimg.com/vi/kyiWTgs3jMI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDBz1pZKdXMyQ-dUuI7MyQXzEBFGw",
       "date"    : "15/10/2017",
       "title"   : "Prime Number generators : C++ & Java",
       "desc"    : "We create two different prime number generators with Java and C++",
