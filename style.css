@@ -24,6 +24,15 @@ body {
   overflow-x: hidden;
 }
 
+#canvas_container {
+  position: relative;
+  width: 70%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 0.5vh solid var(--color3);
+}
+
 #main_container {
   position: relative;
   display: inline-block;

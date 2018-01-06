@@ -6,10 +6,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src=WebGL_lib/MatrixLib/toji-gl-matrix-7fc31d5/dist/gl-matrix.js></script>
+    <script src=WebGL_lib/compressed.js></script>
     <script src=activityFeed.json></script>
     <script src=activityReader.js></script>
+    <script src=indexRender.js></script>
   </head>
-  <body>
+  <body onload=initWebGL()>
     <nav>
       <a href="https://r-e-t-u-r-n-n-u-l-l.github.io"><img id=webLink alt="r-n" src="https://yt3.ggpht.com/-MkimIbd4DxQ/AAAAAAAAAAI/AAAAAAAAAAA/3i9JXS4rrT0/s288-c-k-no-mo-rj-c0xffffff/photo.jpg"></a>
       <ul id=nav>
@@ -21,6 +24,7 @@
     </nav>
     <div id=main_container>
       <h1>Return Null</h1>
+      <div id=canvas_container></div>
     </div>
     <footer></footer>
   </body>
