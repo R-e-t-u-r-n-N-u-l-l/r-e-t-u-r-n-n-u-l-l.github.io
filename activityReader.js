@@ -30,8 +30,11 @@ function getActivityByTags() {
 function displayContent(activity) {
   var container = document.getElementById("content_container");
   container.innerHTML = "";
-  for(var a of activity)
-    container.innerHTML += "<div class=content><p><a href=javascript:void(0) onclick=\"window.open('" + a.url + "', '_blank')\">" + a.title + "</a><br /><br />" + a.desc + "<br /> Date: " + a.date + "</p><a href=javascript:void(0) onclick=\"window.open('" + a.url + "', '_blank')\"><img alt='Image not available' src=" + a.img + "></a></div>";
+  for(var a of activity) {
+    if(a.tags[0] == "filler")
+      continue;
+    container.innerHTML += "<div class=content><p><a href=\'" + a.url + "\' target=blank>" + a.title + "</a><br /><br />" + a.desc + "<br /> Date: " + a.date + "</p><a href=javascript:void(0) onclick=\"window.open('" + a.url + "', '_blank')\"><img alt='Image not available' src=" + a.img + "></a></div>";
+  }
 }
 
 function search() {
