@@ -48,6 +48,8 @@ function getSearchActivity() {
   if(keywords != undefined && keywords.length > 0) {
     for(var i = activity.length - 1; i >= 0; i--) {
       var a = activity[i];
+      if(a.tags[0] == "filler")
+        continue;
       var title = a.title.toLowerCase().split(" ");
       var desc  = a.desc.toLowerCase().split(" ");
       for(var k of keywords) {
