@@ -17,7 +17,15 @@ activityFeed = {
       "desc"    : "We create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
     },
     {
-      "tags"    : ["java", "c++"],
+      "tags"    : ["video", "c++", "java"],
+      "url"     : "https://www.youtube.com/watch?v=LUcn8cZdeQA",
+      "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDTD5RbHsNgboYGYq-PXfgyCuRQVA",
+      "date"    : "23/12/2017",
+      "title"   : "Programming Fractal Shapes: Java",
+      "desc"    : "We create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
+    },
+    {
+      "tags"    : ["video", "java", "c++"],
       "url"     : "https://www.youtube.com/watch?v=kyiWTgs3jMI",
       "img"     : "https://i.ytimg.com/vi/kyiWTgs3jMI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDBz1pZKdXMyQ-dUuI7MyQXzEBFGw",
       "date"    : "15/10/2017",
