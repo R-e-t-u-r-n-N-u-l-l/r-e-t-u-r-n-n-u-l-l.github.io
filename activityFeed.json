@@ -1,9 +1,9 @@
 activityFeed = {
   "content": [
     {
-      "tags"    : ["video", "c++"],
+      "tags"    : ["video", "c++", "neural network"],
       "url"     : "https://www.youtube.com/watch?v=CfhwotmbrLI",
-      "img"     : "https://i.ytimg.com/vi/CfhwotmbrLI/hqdefault.jpg?sqp=-oaymwEYCNIBEHZIVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLC9N2CUo-lBF-YvFp-9GuL_KI0QEQ",
+      "img"     : "https://i.ytimg.com/vi/CfhwotmbrLI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDRnu2sYCbAaRJ4UU-_NPYFr38EWQ",
       "date"    : "23/12/2017",
       "title"   : "Neural Network Digit Recognition: C++",
       "desc"    : "We create a neural network that can recognize handwritten digits with C++ and the olcConsoleGameEngine created by javidx9",
