@@ -86,7 +86,7 @@
 #search_container {
   position: relative;
   display: inline-block;
-  margin: calc(1vw + 1vh); 
+  margin: calc(1vw + 1vh);
   float: right;
 }
 
