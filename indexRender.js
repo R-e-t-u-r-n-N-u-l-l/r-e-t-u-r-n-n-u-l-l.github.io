@@ -1,33 +1,28 @@
 var offset 	= 0;
-
+var delta   = 0.005;
+var model;
 // ratio : height / width
-var ratio   = 9 / 16;
+var ratio   = 3 / 4;
 
 function initWebGL() {
-  var container  = document.querySelector('#canvas_container');
-  var width      = getWidth();
-	webGL 		     = new WebGL([width, width * ratio], container);
-  resizeWebGL();
-	webGL.camera.location = new Vector3D(0, 0, -5);
-	webGL.useShader(SHADERS.PER_FRAGMENT_LIGHTING);
+  var gl = new WebGL([getWidth(), getWidth() * ratio], document.querySelector('#canvas_container'));
 
-  var texture = Loader.loadTexture('assets/randomNoise.png');
-	var model 	= Loader.loadModel('assets/returnnull.obj');
-		  custom  = new Custom(model, {location: new Vector3D(0, 0, 0), texture: texture, shininess: 1});
+  var texture   = Loader.loadTexture('assets/randomNoise.png');
+  var modelData = Loader.loadModel('assets/returnnull.obj');
 
-	draw();
+  model = new Model(modelData, {texture: texture, shininess: 0.7, location: new Vector3D(0, 0, 4)});
+
+  new PointLight('#3b3', '#2d2', new Vector3D(0, -5, -15));
+
+  Renderer.startRendering('render');
 }
 
-function draw() {
-	Renderer.clearCanvas(0, 0, 0, 0);
-  Lighting.AmbientLight('#000');
-	Lighting.PointLight('#2f2', '#dfd', new Vector3D(0, 0, 10))
-	custom.rotate(0, offset / 1.5, 0);
-	custom.scale(2, 2 / ratio, 2);
-	custom.location.y = Math.sin(offset / 3);
-	custom.render();
-	offset += 0.03;
-	requestAnimationFrame(draw);
+function render() {
+  model.rotate(0, offset, 0);
+  model.moveTo(0, Math.sin(offset) / 2, 4);
+  model.render();
+
+  offset += delta;
 }
 
 
