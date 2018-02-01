@@ -345,16 +345,15 @@
   				object.location.z,
   			]);
 
-  		mat4.rotate(modelViewMatrix, modelViewMatrix, object.rotation.x, [1, 0, 0]);
-  		mat4.rotate(modelViewMatrix, modelViewMatrix, object.rotation.y, [0, 1, 0]);
-  		mat4.rotate(modelViewMatrix, modelViewMatrix, object.rotation.z, [0, 0, 1]);
-
 
   		mat4.translate(modelViewMatrix, modelViewMatrix, [webGL.camera.location.x, -webGL.camera.location.y, -webGL.camera.location.z]);
   		mat4.rotate(modelViewMatrix, modelViewMatrix, webGL.camera.rotation.x, [1, 0, 0]);
   		mat4.rotate(modelViewMatrix, modelViewMatrix, webGL.camera.rotation.y, [0, 1, 0]);
   		mat4.translate(modelViewMatrix, modelViewMatrix, [-webGL.camera.location.x, webGL.camera.location.y, webGL.camera.location.z]);
 
+      mat4.rotate(modelViewMatrix, modelViewMatrix, object.rotation.x, [1, 0, 0]);
+      mat4.rotate(modelViewMatrix, modelViewMatrix, object.rotation.y, [0, 1, 0]);
+      mat4.rotate(modelViewMatrix, modelViewMatrix, object.rotation.z, [0, 0, 1]);
 
   		var normalMatrix = mat4.create();
   		mat4.invert(normalMatrix, modelViewMatrix);
@@ -427,15 +426,15 @@
   	updateDirections() {
   		this.FORWARD 	= new Vector3D(-Math.sin(this.rotation.y), 0,  Math.cos(this.rotation.y));
   		this.RIGHT		= new Vector3D(-Math.cos(this.rotation.y), 0, -Math.sin(this.rotation.y))
-  		this.UP			= new Vector3D(0, 1, 0);
+  		this.UP			  = new Vector3D(0, 1, 0);
 
   		this.FORWARD.normalize();
   		this.RIGHT.normalize();
   		this.UP.normalize();
 
-  		this.BACKWARD	= Vector3D.mult(this.FORWARD.copy(), -1);
-  		this.LEFT		= Vector3D.mult(this.RIGHT.copy(), -1);
-  		this.DOWN		= Vector3D.mult(this.UP.copy(), -1);
+  		this.BACKWARD	 = Vector3D.mult(this.FORWARD.copy(), -1);
+  		this.LEFT		   = Vector3D.mult(this.RIGHT.copy(), -1);
+  		this.DOWN		   = Vector3D.mult(this.UP.copy(), -1);
   	}
 
   	move(x, y, z, t = 1) {

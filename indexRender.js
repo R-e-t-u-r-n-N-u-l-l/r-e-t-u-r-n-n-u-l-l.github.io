@@ -1,11 +1,13 @@
 var offset 	= 0;
 var delta   = 0.005;
+var webGL;
 var model;
+
 // ratio : height / width
 var ratio   = 9 / 16;
 
 function initWebGL() {
-  var gl = new WebGL([getWidth(), getWidth() * ratio], document.querySelector('#canvas_container'));
+  webGL = new WebGL([getWidth(), getWidth() * ratio], document.querySelector('#canvas_container'));
 
   var texture   = Loader.loadTexture('assets/randomNoise.png');
   var modelData = Loader.loadModel('assets/returnnull.obj');
@@ -35,7 +37,6 @@ function resizeWebGL() {
   webGL.canvas.width  = getWidth();
   webGL.canvas.height = getWidth() * ratio;
   webGL.context.viewport(0, 0, webGL.canvas.width, webGL.canvas.height);
-  WEBGL_SETTINGS.RATIO = getWidth() / getWidth();
 }
 
 window.onresize = resizeWebGL;
