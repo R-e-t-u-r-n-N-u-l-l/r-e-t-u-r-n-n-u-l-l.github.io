@@ -2,7 +2,7 @@ var offset 	= 0;
 var delta   = 0.005;
 var model;
 // ratio : height / width
-var ratio   = 3 / 4;
+var ratio   = 9 / 16;
 
 function initWebGL() {
   var gl = new WebGL([getWidth(), getWidth() * ratio], document.querySelector('#canvas_container'));
