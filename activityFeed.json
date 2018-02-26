@@ -1,6 +1,14 @@
 activityFeed = {
   "content": [
     {
+      "tags"    : ["video", "javascript"],
+      "url"     : "https://www.youtube.com/watch?v=lVSAFZQTEbE&t=6s",
+      "img"     : "https://i.ytimg.com/vi/lVSAFZQTEbE/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDOx2v05j4_MkFJPjV6xTc7SRuvAg",
+      "date"    : "27/01/2018",
+      "title"   : "Flocking Behaviour: Javascript",
+      "desc"    : "We create a flocking behaviour algorithm in Javascript and add some fun modifications",
+    },
+    {
       "tags"    : ["video", "c++", "neural network"],
       "url"     : "https://www.youtube.com/watch?v=CfhwotmbrLI",
       "img"     : "https://i.ytimg.com/vi/CfhwotmbrLI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDRnu2sYCbAaRJ4UU-_NPYFr38EWQ",
