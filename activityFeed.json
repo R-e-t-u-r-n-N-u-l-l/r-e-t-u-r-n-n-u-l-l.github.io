@@ -1,12 +1,28 @@
 activityFeed = {
   "content": [
     {
+      "tags"    : ["video", "java", "neural network"],
+      "url"     : "https://www.youtube.com/watch?v=l3Ndl6R2JPQ",
+      "img"     : "https://i.ytimg.com/vi/l3Ndl6R2JPQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBdI-oekI7soVMi_K2VE-Y-EjdDmA",
+      "date"    : "03/04/2018",
+      "title"   : "Genetic Algorithm: Mini-Golf",
+      "desc"    : "I created a genetic algorithm that learns to play mini-golf. The algorithm just uses an array of vectors to play and uses other rules of a genetic algorithm like mutation",
+    },
+    {
+      "tags"    : ["video", "c++"],
+      "url"     : "https://www.youtube.com/watch?v=8RONJPOgZjw",
+      "img"     : "https://i.ytimg.com/vi/8RONJPOgZjw/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBdQFn-N2KZ6-GXj7f-418VSduDvw",
+      "date"    : "14/03/2018 [03/14/2018]",
+      "title"   : "Generating One Million Digits of Pi: Gauss-Legendre",
+      "desc"    : "A special video for Pi day where I generate one million digits of pi accurately. In this video I use the Gauss-Legendre algorithm to generate pi, because it is very fast and accurate",
+    },
+    {
       "tags"    : ["video", "javascript"],
-      "url"     : "https://www.youtube.com/watch?v=lVSAFZQTEbE&t=6s",
+      "url"     : "https://www.youtube.com/watch?v=lVSAFZQTEbE",
       "img"     : "https://i.ytimg.com/vi/lVSAFZQTEbE/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDOx2v05j4_MkFJPjV6xTc7SRuvAg",
       "date"    : "27/01/2018",
       "title"   : "Flocking Behaviour: Javascript",
-      "desc"    : "We create a flocking behaviour algorithm in Javascript and add some fun modifications",
+      "desc"    : "In this video I will show you an example of a flocking behaviour algorithm, with the three fundamental rules and some fun modifications",
     },
     {
       "tags"    : ["video", "c++", "neural network"],
@@ -14,7 +30,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/CfhwotmbrLI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDRnu2sYCbAaRJ4UU-_NPYFr38EWQ",
       "date"    : "27/01/2018",
       "title"   : "Neural Network Digit Recognition: C++",
-      "desc"    : "We create a neural network that can recognize handwritten digits with C++ and the olcConsoleGameEngine created by javidx9",
+      "desc"    : "I create a neural network that can recognize handwritten digits with C++ and the olcConsoleGameEngine created by javidx9",
     },
     {
       "tags"    : ["webgl", "javascript"],
@@ -30,7 +46,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/LUcn8cZdeQA/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDTD5RbHsNgboYGYq-PXfgyCuRQVA",
       "date"    : "23/12/2017",
       "title"   : "Programming Fractal Shapes: Java",
-      "desc"    : "We create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
+      "desc"    : "I create a new fractal shape and recreate some beautiful existing fractal shapes with Java",
     },
     {
       "tags"    : ["filler", "java", "c++"],
@@ -41,7 +57,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/kyiWTgs3jMI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDBz1pZKdXMyQ-dUuI7MyQXzEBFGw",
       "date"    : "15/10/2017",
       "title"   : "Prime Number generators : C++ & Java",
-      "desc"    : "We create two different prime number generators with Java and C++",
+      "desc"    : "I create two different prime number generators with Java and C++",
     },
     {
       "tags"    : ["video", "java"],
@@ -49,7 +65,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/4KOAiRmOBUo/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtjM3QZ2JWk_Uf-OXAu7CTkENoPA",
       "date"    : "2/10/2017",
       "title"   : "2D Survival-type Game in Java - #2 - Animals and crafting",
-      "desc"    : "We create the second part of a 2D survival game with Java",
+      "desc"    : "I create the second part of a 2D survival game with Java",
     },
     {
       "tags"    : ["video", "java"],
@@ -57,7 +73,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/xxiaZlPnIh0/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAZ8bznZedHWuWnR6lcC42iNlLoVg",
       "date"    : "09/09/2017",
       "title"   : "2D Survival-type Game in Java - #1 - The beginning",
-      "desc"    : "We create the beginnings of a 2D survival game with Java",
+      "desc"    : "I create the beginnings of a 2D survival game with Java",
     },
     {
       "tags"    : ["video", "java"],
@@ -65,7 +81,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/0PM10vOtd6o/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB3Ik6N3JaE416x2ZMNV_r8HUGZfg",
       "date"    : "30/06/2017",
       "title"   : "Java Algorithms - Brute Force",
-      "desc"    : "We create a brute force algorithm that checks every possible input string that concists of ASCII characters with Java",
+      "desc"    : "I create a brute force algorithm that checks every possible input string that concists of ASCII characters with Java",
     },
     {
       "tags"    : ["video", "java"],
@@ -73,7 +89,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/Dc04ZZCp108/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAmZQFfLgtp7mOO0Flj_wetrK7b-g",
       "date"    : "02/06/2017",
       "title"   : "Simple Java Games #1: Snake",
-      "desc"    : "We create the well know video-game Snake with Java",
+      "desc"    : "I create the well know video-game Snake with Java",
     },
     {
       "tags"    : ["video", "javascript"],
@@ -81,7 +97,7 @@ activityFeed = {
       "img"     : "https://i.ytimg.com/vi/KU6qdvcdNxo/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB42O1JoB3czCMoRdGR-skL_57uHg",
       "date"    : "12/05/2017",
       "title"   : "Google Dinosaur: The Perfect Algorithm",
-      "desc"    : "We create our first video about a perfect algorithm for the Google dinosaur game with JavaScript",
+      "desc"    : "I create our first video about a perfect algorithm for the Google dinosaur game with JavaScript",
     },
   ]
 }
