@@ -55,7 +55,7 @@
 }
 
 .custom_checkbox:hover > input,.custom_checkbox {
- background-color: #bbb;
+ background-color: #999;
 }
 
 .custom_checkbox[active *= true] {
