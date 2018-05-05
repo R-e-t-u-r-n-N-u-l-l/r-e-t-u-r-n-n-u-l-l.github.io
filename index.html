@@ -11,6 +11,46 @@
     <script src=activityFeed.json></script>
     <script src=activityReader.js></script>
     <script src=indexRender.js></script>
+    <script>
+    var CLIENT_ID = '392012607800-md7oc2inql0msecuudmuub8vjgj5v76i.apps.googleusercontent.com';
+    var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"];
+    var SCOPES = 'https://www.googleapis.com/auth/youtube.readonly';
+
+    function handleClientLoad() {
+      gapi.load('client:auth2', initClient);
+    }
+
+    function initClient() {
+      gapi.client.init({
+        discoveryDocs: DISCOVERY_DOCS,
+        clientId: CLIENT_ID,
+        scope: SCOPES
+      }).then(function () {
+        getChannel();
+      });
+    }
+
+    function appendPre(message) {
+      var container = document.getElementById('webgl_desc');
+      container.innerHTML += message;
+    }
+
+    function getChannel() {
+      gapi.client.youtube.channels.list({
+        'part': 'snippet,contentDetails,statistics',
+        'id': 'UCbJ6YYFqb1U1ymmBvpBWqYA'
+      }).then(function(response) {
+        var channel = response.result.items[0];
+        appendPre('</br></br>' + 'Total views: ' + channel.statistics.viewCount + '</br>' +
+                  'Total videos: ' + channel.statistics.videoCount + '</br>' +
+                  'Total subscribers: ' + channel.statistics.subscriberCount + '');
+      });
+    }
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
   </head>
   <body onload=initWebGL()>
     <nav>
