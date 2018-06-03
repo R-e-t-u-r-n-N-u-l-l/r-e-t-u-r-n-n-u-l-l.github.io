@@ -2,6 +2,14 @@ activityFeed = {
   "content": [
     {
       "tags"    : ["video", "c++", "opengl"],
+      "url"     : "https://www.youtube.com/watch?v=NdA_rFihg1w",
+      "img"     : "https://i.ytimg.com/vi/NdA_rFihg1w/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAzqNlnWZlBL0vNgAfEvaKKyjOn_Q",
+      "date"    : "02/06/2018",
+      "title"   : "3D Management Game: C++ #1",
+      "desc"    : "A 3D management game in C++ I am currently working on. These are just the basics of the game along with the general idea of the game.",
+    },
+    {
+      "tags"    : ["video", "c++", "opengl"],
       "url"     : "https://www.youtube.com/watch?v=IyT9EbvXE6M",
       "img"     : "https://i.ytimg.com/vi/IyT9EbvXE6M/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAiG2tipdIiOS2KaPSEhP85Dd_TPA",
       "date"    : "05/05/2018",
