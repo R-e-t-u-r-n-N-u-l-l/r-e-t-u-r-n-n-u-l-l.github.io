@@ -2,6 +2,14 @@ activityFeed = {
   "content": [
     {
       "tags"    : ["video", "c++", "opengl"],
+      "url"     : "https://www.youtube.com/watch?v=Sblnf0jdl80",
+      "img"     : "https://i.ytimg.com/vi/Sblnf0jdl80/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDhl4lsm7wXGS-AeilKeLKdw-mJOQ",
+      "date"    : "01/07/2018",
+      "title"   : "3D Management Game - #2 - Factories and UI",
+      "desc"    : "A 3D management game in C++ with OpenGL I am currently working on. In this episode I show the basic UI and structures you can place.",
+    },
+    {
+      "tags"    : ["video", "c++", "opengl"],
       "url"     : "https://www.youtube.com/watch?v=NdA_rFihg1w",
       "img"     : "https://i.ytimg.com/vi/NdA_rFihg1w/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAzqNlnWZlBL0vNgAfEvaKKyjOn_Q",
       "date"    : "02/06/2018",
