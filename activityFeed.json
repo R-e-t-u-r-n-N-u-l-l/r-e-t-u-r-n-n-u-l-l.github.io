@@ -2,6 +2,14 @@ activityFeed = {
   "content": [
     {
       "tags"    : ["video", "c++", "opengl"],
+      "url"     : "https://www.youtube.com/watch?v=SmlI2FBbhEI",
+      "img"     : "https://i.ytimg.com/vi/SmlI2FBbhEI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApHtdTyOoAzr0Ek0IGY-_izUrE8A",
+      "date"    : "13/07/2018",
+      "title"   : "Shader Image Editor: C++/OpenGL",
+      "desc"    : "It's an image editor and creator that use the GLSL to process the images. I created this some time ago and decided to revist the project and improve it a bit. It doesn't have many special functions, but editing images with it is just like creating shaders.",
+    },
+    {
+      "tags"    : ["video", "c++", "opengl"],
       "url"     : "https://www.youtube.com/watch?v=Sblnf0jdl80",
       "img"     : "https://i.ytimg.com/vi/Sblnf0jdl80/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDhl4lsm7wXGS-AeilKeLKdw-mJOQ",
       "date"    : "01/07/2018",
