@@ -2,6 +2,31 @@ activityFeed = {
   "content": [
     {
       "tags"    : ["video", "c++", "opengl"],
+      "url"     : "https://www.youtube.com/watch?v=6qoMmRFMoWQ",
+      "img"     : "https://i.ytimg.com/vi/6qoMmRFMoWQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAqrY-WZZDieu5bhf8HN9b2SAisSA",
+      "date"    : "27/08/2018",
+      "title"   : "3D Management Game Devlog - #3 - Warehouse with Inventory",
+      "desc"    : "A 3D management game devlog in C++ with OpenGL I am currently working on. In this episode I show some overall improvements, but also new features, such as the truck following the road and a warehouse that stores the gathered ores.",
+    },
+    {
+      "tags"    : ["video", "c++", "opengl"],
+      "url"     : "https://www.youtube.com/watch?v=vMj8y01G020",
+      "img"     : "https://i.ytimg.com/vi/vMj8y01G020/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAYvfhQi-d2NsoYLVJZHVxi5TYHKA",
+      "date"    : "20/08/2018",
+      "title"   : "Ludum Dare 42 Entry: T3DRIS (3D Tetris)",
+      "desc"    : "This video might be a little late, but here is my entery for the Ludum Dare 42 game jam competition. It's called T3DRIS and it's basically just 3D Tetris.",
+    },
+    {
+      "tags"    : ["video", "c++"],
+      "url"     : "https://www.youtube.com/watch?v=lQYr-aZW4II",
+      "img"     : "https://i.ytimg.com/vi/lQYr-aZW4II/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCUlzD_hljfPxDc9n1cWPZJ42Ipdw",
+      "date"    : "09/08/2018",
+      "title"   : "Sudoku Solver: C++",
+      "desc"    : "A sudoku solver I decided to create after I had some trouble with solving some hard sudoku's. It first tries to solve a sudoku in the traditional way (kind of like a human would) and if that isn't successful it uses a brute force algorithm called backtracking.",
+    },
+
+    {
+      "tags"    : ["video", "c++", "opengl"],
       "url"     : "https://www.youtube.com/watch?v=SmlI2FBbhEI",
       "img"     : "https://i.ytimg.com/vi/SmlI2FBbhEI/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApHtdTyOoAzr0Ek0IGY-_izUrE8A",
       "date"    : "13/07/2018",
